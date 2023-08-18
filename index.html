@@ -163,6 +163,11 @@
 					<label class="pointer" for="reqjq">Make sure a modern version (≥ 1.7) of <a href="http://jquery.com">jQuery</a> is available for your code.</label>
 				</fieldset>
 
+				<fieldset>
+					<input class="pointer" type="checkbox" id="datahtml" ng-model="options.dataHtml" ng-change="updateBookmarklet(options)"></input>
+					<label class="pointer" for="datahtml">Use data/html to be able to run the bookmarklet on <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=98871">Chrome's New Tab Page</a> (useful for bookmarklets that redirect)</label>
+				</fieldset>
+
 			</div>
 
 			<fieldset id="InputFields">
